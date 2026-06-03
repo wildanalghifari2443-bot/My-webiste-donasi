@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Website Donasi</title>
+    <!-- Kita pakai Tailwind CSS lagi agar tampilannya keren & modern di HP -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <!-- NAVIGASI UTAMA -->
+    <nav class="bg-gray-800 p-4 shadow-lg border-b border-gray-700">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-yellow-400">Dashboard Admin</h1>
+            <span class="bg-green-500 text-xs text-white px-2 py-1 rounded-full uppercase font-bold animate-pulse">Live</span>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto p-4 mt-6">
+        
+        <!-- RINGKASAN DATA (KARTU INFORMASI) -->
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-800 p-4 rounded-xl border border-gray-700 shadow-md">
+                <p class="text-xs text-gray-400 font-semibold uppercase">Total Donasi</p>
+                <p class="text-xl font-bold text-green-400 mt-1">Rp 150.000</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-xl border border-gray-700 shadow-md">
+                <p class="text-xs text-gray-400 font-semibold uppercase">Donatur Aktif</p>
+                <p class="text-xl font-bold text-blue-400 mt-1">2 Orang</p>
+            </div>
+        </div>
+
+        <!-- TABEL DATA DONASI -->
+        <div class="bg-gray-800 rounded-xl border border-gray-700 shadow-md overflow-hidden">
+            <div class="p-4 bg-gray-750 border-b border-gray-700">
+                <h3 class="font-bold text-gray-300">Riwayat Transaksi Masuk</h3>
+            </div>
+            
+            <!-- Agar kalau di layar HP tabelnya lebar bisa digeser (scroll) -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-800 border-b border-gray-700 text-xs text-yellow-500 font-semibold uppercase">
+                            <th class="p-3">Nama Donatur</th>
+                            <th class="p-3">Nominal</th>
+                            <th class="p-3">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y divide-gray-700">
+                        <!-- Ini data contoh sementara (Simulasi) -->
+                        <tr>
+                            <td class="p-3 font-medium">Budi Santoso</td>
+                            <td class="p-3 text-green-400 font-semibold">Rp 100.000</td>
+                            <td class="p-3"><span class="bg-green-900 text-green-300 text-xs px-2 py-0.5 rounded-full font-semibold">Berhasil</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-medium">Hamba Allah</td>
+                            <td class="p-3 text-green-400 font-semibold">Rp 50.000</td>
+                            <td class="p-3"><span class="bg-green-900 text-green-300 text-xs px-2 py-0.5 rounded-full font-semibold">Berhasil</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
